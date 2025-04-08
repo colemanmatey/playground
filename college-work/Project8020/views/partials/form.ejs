@@ -1,0 +1,36 @@
+<form class="employee-form" action="<%= action %>"  method="post" enctype="multipart/form-data">    
+    <label for="role">Name</label>
+    <input type="text" name="name" id="name" value="<%= employee.name || '' %>">
+
+    <label for="role">Role</label>
+    <input type="text" name="role" id="role" value="<%= employee.role || '' %>">
+
+    <label for="department">Department</label>
+    <input type="text" name="department" id="department" value="<%= employee.department || '' %>">
+
+    <label for="email">Email</label>
+    <input type="tel" name="email" id="email" value="<%= employee.email || '' %>">
+
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone" value="<%= employee.phone || '' %>">
+
+    <label for="address">Address</label>
+    <input type="text" name="address" id="address" value="<%= employee.address || '' %>">
+
+    <label for="image">Upload image</label>
+    <input type="file" name="image" id="image">
+
+    <label for="notes">Notes</label>
+    <textarea name="notes" id="my-expressjs-tinymce-app" rows="4"><%= employee.notes || '' %></textarea>
+
+    <div class="button-group">
+        <button type="button" onclick="window.location.href='/employees'">Back</button>
+        <button type="reset">Undo</button>
+        <button type="submit">Save</button>
+    </div>
+</form>
+
+<script type="application/javascript" src= "/tinymce/tinymce.min.js"></script>
+
+<!-- Script element sourcing the TinyMCE configuration -->
+<script type="application/javascript" src= "/js/my-tinymce-config.js"></script>

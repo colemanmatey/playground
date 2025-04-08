@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CoursesViewModel;
+@{
+
+}
+
+<h2>Manage your course</h2>
+
+<div class ="mb-3">
+    <a asp-controller="Course" asp-action="Index">All courses</a> |
+    <a asp-controller="Course" asp-action="Edit" asp-route-id="@Model.Course.CourseID">Edit this course</a> |
+    <a asp-controller="Course" asp-action="Create">Add a new course</a>
+</div>
+
+<div class="mb-3">
+    <h4>Course Summary:</h4>
+    <p>The course "@Model.Course.Name" is in room "@Model.Course.RoomNumber" starting on "@Model.Course.StartDate" and the instructor is "@Model.Course.Instructor"</p>
+    <p>
+        <span>Invites not sent: @ViewData["invitesNotSent"]</span>   
+        <span class="mx-3">Sent count: @ViewData["invitesSent"]</span>
+        <span class ="mx-3">Confirmed count: @ViewData["invitesConfirmed"]</span>
+        <span class="mx-3">Declined count: @ViewData["invitesDeclined"]</span>
+    </p>
+</div>
+
+<div>
+    <h4>Students</h4>
+    @if(Model.Course.Students.Count() == 0)
+    {
+        <p>No students yet - you should add some!</p>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Enrolment Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model.Course.Students)
+                {
+                    <tr>
+                        <td>@student.Name</td>
+                        <td>@student.Email</td>
+                        @switch(student.Status)
+                        {
+                            case EnrolmentStatus.ConfirmationMessageSent:
+                                <td>Invitation sent</td>
+                                break;
+                            case EnrolmentStatus.EnrollmentConfirmed:
+                                <td>Enrolment confirmed</td>
+                                break;
+                            case EnrolmentStatus.EnrollmentDeclined:
+                                <td>Enrolment declined</td>
+                                break;
+                            default:
+                                <td>Invitation not sent</td>
+                                break;
+                        }              
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <form asp-controller="Course" asp-action="NewStudent" asp-route-id="@Model.Course.CourseID" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <label for="Student.Name">Name:</label>
+        <input asp-for="Student.Name" />
+
+        <label for="Student.Email">Email:</label>
+        <input asp-for="Student.Email" />
+
+        <input asp-for="Student.CourseID" value="@Model.Course.CourseID" hidden />
+
+        <button class="btn btn-primary" type="submit">Create student</button>
+    </form>
+
+
+    <div class="mt-3 mb-3">
+        <h5>Actions:</h5>
+        <form asp-controller="Course" asp-action="Detail" asp-route-id="@Model.Course.CourseID" method="post">
+            <button class="btn btn-primary" type="submit">Send Confirmation Messages</button>
+        </form>
+    </div>
+</div>

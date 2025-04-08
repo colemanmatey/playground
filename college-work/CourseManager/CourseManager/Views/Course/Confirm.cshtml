@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CoursesViewModel
+
+<h2>Confirmation response</h2>
+
+<div>
+    <p><h6>You have been invited to enroll in the '@Model.Course.Name' course!</h6></p>
+    <p>Hey @Model.Student.Name, you have been invited to enroll in the @Model.Course.Name course in room @Model.Course.RoomNumber
+        starting on @Model.Course.StartDate with @Model.Course.Instructor - we would be thrilled to have you join us
+        but ask that you confirm your enrolment!
+    </p>
+
+    <form asp-controller="Course" asp-action="Confirm" method="post">
+        Do you want to enroll?
+        <input type="radio" name="choice" value="Yes" class="m-2" /> Yes
+        <input type="radio" name="choice" value="No" class="m-2" /> No
+        <input type="submit" value="Submit response" class="btn btn-primary m-2" />
+    </form>
+</div>

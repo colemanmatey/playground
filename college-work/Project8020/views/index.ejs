@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <%- include('partials/nav.ejs') %>
+
+    <main class="centered-content">
+        <h2>Welcome to the Employee Management System</h2>
+        <p>Our Employee Management System helps you efficiently manage employee records, including their personal information, job roles, and more. It provides an easy-to-use interface to view, add, and edit employee details, ensuring that all the essential information is at your fingertips.</p>
+        <br>
+        <button class="btn" onclick="window.location.href='/employees'">View Employee List</button>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

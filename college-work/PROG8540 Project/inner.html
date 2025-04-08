@@ -1,0 +1,195 @@
+<!-- 
+Name: Coleman Asare Matey
+ID: 8976310 
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole's blog | Inner</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Project - Coleman Matey - Cmatey6310@conestogac.on.ca</h1>
+        <a href="./index.html"><img class="logo" src="./images/logo_transparent.png" alt="logo"></a>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <a href="./inner.html">About</a>
+                <ul class="sub-menu">
+                    <li><a href="./inner.html#interests">Interests</a></li>
+                    <li><a href="./inner.html#facts">Facts</a></li>
+                    <li><a href="./inner.html#contact">Contact</a></li>
+                </ul>    
+            </li>
+            <li><a href="./index.html#skills">Skills</a></li>
+            <li><a href="./inner.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <h2>Getting to Know Me</h2>
+            <img src="./images/coding.jpg" alt="hero image">
+        </section>
+
+        <!-- Personal Interests -->
+        <section id="interests" class="interests">
+            <article>
+                <div>
+                    <h3>My Journey in Software Development</h3>
+                    <p>Welcome to the personal side of my blog! Here, I dive into my journey through the world of software development. From the first lines of code to the complex systems I've worked on, I'll share my experiences and the lessons I've learned along the way.</p>
+                    <p>Stay tuned for stories about my favorite projects, coding challenges, and the evolution of my coding skills.</p>
+                </div>
+                <video src="./videos/coding-video.mp4" controls></video>
+            </article>
+        </section>
+
+        <!-- Fun Facts -->
+        <section id="facts" class="facts">
+            <div>
+                <h2>Interesting Insights and Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Details</th>
+                            <th>Metrics</th>
+                            <th>Highlights</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Languages</td>
+                            <td>Proficient</td>
+                            <td>10+</td>
+                            <td>JavaScript, Python, C#</td>
+                        </tr>
+                        <tr>
+                            <td>Projects</td>
+                            <td>Completed</td>
+                            <td>50+</td>
+                            <td>Various domains</td>
+                        </tr>
+                        <tr>
+                            <td>Certifications</td>
+                            <td>Achieved</td>
+                            <td>5</td>
+                            <td>Software Engineering, Data Science</td>
+                        </tr>
+                        <tr>
+                            <td>Years Experience</td>
+                            <td>Active</td>
+                            <td>7</td>
+                            <td>Industry Experience</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h3>Let's Connect!</h3>
+            <form class="form" action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <p>What technologies are you passionate about?</p>
+                </div>
+
+                <div class="form-group">
+                    <select name="tech-stack" id="tech-stack">
+                        <optgroup label="Front-end">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JavaScript</option>
+                        </optgroup>
+                        <optgroup label="Back-end">
+                            <option value="python">Python</option>
+                            <option value="sql">SQL</option>
+                            <option value="php">PHP</option>
+                            <option value="c#">C#</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bio">Tell me about yourself:</label>
+                    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write your bio here" required></textarea>
+                </div>
+
+                <p class="form-group">Which platforms do you use in your work?</p>
+                <div class="form-group">
+                    <div>
+                        <input type="checkbox" name="windows" id="windows">
+                        <label for="windows">Windows</label>
+                        <input type="checkbox" name="macOS" id="macOS">
+                        <label for="macOS">MacOS</label>
+                        <input type="checkbox" name="linux" id="linux">
+                        <label for="linux">Linux</label>
+                    </div>
+                </div>
+                
+                <p class="form-group">Are you currently working in the tech industry?</p>
+                <div class="form-group">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="industry-status" id="yes" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="industry-status" id="no" value="no">
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="nav">
+            <div>
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>About</h5>
+                <ul>
+                    <li><a href="./inner.html">About Me</a></li>
+                    <li><a href="#">My Story</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Copyright - Coleman Matey - Cmatey6310@conestogac.on.ca</p>
+    </footer>
+</body>
+</html>

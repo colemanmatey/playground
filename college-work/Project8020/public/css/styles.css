@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9; /* Light background for a clean look */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #004d40; /* Deep teal background */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background-color: #00796b; /* Slightly lighter teal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px; /* Space for footer */
+}
+
+/* Centered Content for Index Page */
+.centered-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.centered-content h2 {
+    margin-top: 150px;
+    color: #00796b; /* Teal color for headings */
+}
+
+.centered-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter text color for better readability */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1; /* Light gray background for header */
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Light highlight on row hover */
+}
+
+.thumbnail {
+    max-width: 90px; /* Slightly larger image for employee list */
+    border-radius: 5px;
+}
+
+/* Employee Detail Page Styles */
+.employee-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.employee-image {
+    margin-right: 550px; /* Adjusted space between image and info */
+}
+
+.employee-image img {
+    max-width: 300px; /* Larger image size */
+    border-radius: 5px;
+}
+
+.employee-info {
+    flex: 1;
+}
+
+/* Form Styles */
+.employee-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.employee-form input,
+.employee-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.btn,
+.button-group button {
+    padding: 12px 20px;
+    background-color: #00796b; /* Teal background for buttons */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-group button {
+    background-color: #004d40; /* Darker teal for button group */
+}
+
+.btn:hover,
+.button-group button:hover {
+    background-color: #003d33; /* Darker shade on hover */
+}
+
+/* Special Button Alignments */
+.btn-left {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+}
+
+.btn-right {
+    margin-left: auto;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <%- include('partials/nav.ejs') %>
+
+    <main>
+        <div class="employee-detail">
+            <div class="employee-image">
+                <img src="/uploads/<%= employee.image %>" alt="Profile photo">
+            </div>
+            <div class="employee-info">
+                <h2><%= employee.name %></h2>
+                <p>Role: <%= employee.role %></p>
+                <p>Department: <%= employee.department %></p>
+                <p>Email: <%= employee.email %></p>
+                <p>Phone: <%= employee.phone %></p>
+                <p>Address: <%= employee.address %></p>
+                <p>Additional Notes: <%= employee.notes %></p>
+                <button class="btn" onclick="window.location.href='/employees/<%= employee.id %>/edit'">Edit</button>
+                <button class="btn" onclick="window.location.href='/employees'">Back</button>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

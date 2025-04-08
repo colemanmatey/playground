@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<Customer>
+
+<h1>All Customers</h1>
+
+<div>
+    <a class="btn btn-outline-success" asp-controller="Customer" asp-action="Create">Add New Customer</a>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning mt-3">
+        @TempData["Message"]
+        @if (TempData["CustomerId"] != null)
+        {
+            <form class="d-inline" asp-action="UndoSoftDelete" asp-route-id="@TempData["CustomerId"]" method="post">
+                <button type="submit" class="btn btn-warning">Undo</button>
+            </form>
+        }
+    </div>
+}
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var customer in Model) {
+        <tr>
+            <td>@customer.Name</td>
+            <td>@customer.Address1 @customer.Address2</td>
+            <td>
+                <a class="btn btn-outline-success" asp-controller="Invoice" asp-action="CustomerInvoice" asp-route-id="@customer.CustomerId">Invoices</a>
+                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@customer.CustomerId">Edit</a>
+                <form class="d-inline" asp-action="SoftDelete" asp-route-id="@customer.CustomerId" method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Pagination -->
+@await Component.InvokeAsync("Pagination")

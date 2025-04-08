@@ -1,0 +1,32 @@
+﻿@model BPViewModel
+
+@{
+}
+
+<h3>All Measurements</h3>
+
+<p><a asp-controller="BP" asp-action="AddNewBP">Add new BP measurement</a> | <a href="">Information on BP measurements</a></p>
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Reading</th>
+            <th>Date Taken</th>
+            <th>Position</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var bp in Model.BPReadings)
+        {
+            <tr>
+                <td>@bp.Systolic/@bp.Diastolic</td>
+                <td>@bp.Date</td>
+                <td>@bp.Position.Name</td>
+                <td>
+                    <a asp-controller="BP" asp-action="Edit" asp-route-id="@bp.Id">Edit</a> |
+                    <a asp-controller="BP" asp-action="Delete" asp-route-id="@bp.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

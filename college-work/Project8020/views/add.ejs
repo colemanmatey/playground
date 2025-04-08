@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <%- include('partials/nav.ejs') %>
+    <h2>Add Employee</h2>
+
+    <%- include('partials/form.ejs', { 
+        employee: {}, 
+        action: '/employees/add/new'}) 
+    %>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

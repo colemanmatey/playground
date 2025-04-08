@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<Invoice>
+
+<div class="container mt-5">
+    <h2>All Invoices</h2>
+
+    <!-- Add Invoice Button -->
+    <div class="mb-3">
+        <a href="/create-invoice" class="btn btn-success">Add New Invoice</a>
+    </div>
+
+    <!-- Invoices Table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Invoice ID</th>
+                <th>Customer</th>
+                <th>Invoice Date</th>
+                <th>Due Date</th>
+                <th>Payment Total</th>
+                <th>Payment Terms</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var invoice in Model)
+                {
+                    <tr>
+                        <td>@invoice.InvoiceId</td>
+                        <td>@invoice.Customer?.Name</td>
+                        <td>@invoice.InvoiceDate</td>
+                        <td>@invoice.InvoiceDueDate</td>
+                        <td>@invoice.PaymentTotal</td>
+                        <td>@invoice.PaymentTerms</td>
+                        <td>
+                            <a href="/invoice/1001" class="btn btn-info btn-sm">View</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <p>No invoices available.</p>
+            }
+
+        </tbody>
+    </table>
+</div>

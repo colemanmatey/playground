@@ -1,0 +1,22 @@
+﻿@model Customer
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3>Create New Customer</h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <partial name="Form" />
+            <div class="form-group">
+                <input type="submit" value="Add New" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-outline-info">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+

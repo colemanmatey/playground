@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\controllers\\bpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\controllers\\bpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\models\\viewmodels\\bpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\models\\viewmodels\\bpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\data\\bptrackerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\data\\bptrackerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\services\\bpmeasurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\services\\bpmeasurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\services\\ibpmeasurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\services\\ibpmeasurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\models\\bloodpressure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\models\\bloodpressure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|c:\\users\\colem\\onedrive - conestoga college\\courses\\2. cad_24f\\prog8551 - microsoft web technologies\\assignments\\problems\\problem_assignment_1\\bptracker\\bptracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40D1F91-6CAC-4E81-8A0B-A581FC4DEF48}|BPTracker\\BPTracker.csproj|solutionrelative:bptracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BPTracker\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T23:51:52.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BPController.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Controllers\\BPController.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Controllers\\BPController.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Controllers\\BPController.cs",
+              "RelativeToolTip": "BPTracker\\Controllers\\BPController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:54:05.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BloodPressure.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\BloodPressure.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Models\\BloodPressure.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\BloodPressure.cs",
+              "RelativeToolTip": "BPTracker\\Models\\BloodPressure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:26:21.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Position.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\Position.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Models\\Position.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\Position.cs",
+              "RelativeToolTip": "BPTracker\\Models\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:26:05.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BPViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\ViewModels\\BPViewModel.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Models\\ViewModels\\BPViewModel.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Models\\ViewModels\\BPViewModel.cs",
+              "RelativeToolTip": "BPTracker\\Models\\ViewModels\\BPViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:26:00.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BPMeasurementService.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Services\\BPMeasurementService.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Services\\BPMeasurementService.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Services\\BPMeasurementService.cs",
+              "RelativeToolTip": "BPTracker\\Services\\BPMeasurementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:10:09.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBPMeasurementService.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Services\\IBPMeasurementService.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Services\\IBPMeasurementService.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Services\\IBPMeasurementService.cs",
+              "RelativeToolTip": "BPTracker\\Services\\IBPMeasurementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T01:10:08.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Program.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Program.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Program.cs",
+              "RelativeToolTip": "BPTracker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T23:47:04.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BPTrackerDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Data\\BPTrackerDbContext.cs",
+              "RelativeDocumentMoniker": "BPTracker\\Data\\BPTrackerDbContext.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\Data\\BPTrackerDbContext.cs",
+              "RelativeToolTip": "BPTracker\\Data\\BPTrackerDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T23:42:03.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\appsettings.json",
+              "RelativeDocumentMoniker": "BPTracker\\appsettings.json",
+              "ToolTip": "C:\\Users\\colem\\OneDrive - Conestoga College\\Courses\\2. CAD_24F\\PROG8551 - Microsoft Web Technologies\\assignments\\problems\\problem_assignment_1\\BPTracker\\BPTracker\\appsettings.json",
+              "RelativeToolTip": "BPTracker\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-15T23:17:35.241Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

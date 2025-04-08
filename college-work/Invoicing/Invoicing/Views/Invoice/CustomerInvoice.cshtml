@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model InvoiceDetailViewModel
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Invoices for @Model.Customer.Name</h3> <br />
+    </div>
+    <div class="col-md-6">
+        <a asp-controller="Customer" asp-action="Index">Return to A-E customers</a> <br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>Address: @Model.Customer.Address1, @Model.Customer.City'</p>
+    </div>
+    <div class="col-md-6">
+        <p>Terms: @Model.Invoices.First().PaymentTerms days</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Invoice</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th>Invoice ID</th>
+                <th>Due Date</th>
+                <th>Amount Paid</th>
+            </tr>
+
+            @foreach (var invoice in Model.Invoices) {
+                
+                    <tr>
+                    <td><a asp-action="LineItems" asp-route-id="@invoice.InvoiceId">@invoice.InvoiceId</a></td>
+                        <td>@invoice.InvoiceDueDate</td>
+                        <td>$@invoice.PaymentTotal</td>
+                    </tr>
+                
+                
+            }
+        </table>
+
+        <div>
+            <form action="/" method="post">
+                <div class="form-group d-flex">
+                    <label for="paymentDate">Date: </label>
+                    <input type="text" class="form-control mx-2" id="paymentDate" name="paymentDate" />
+                </div>
+                <div class="form-group d-flex">
+                    <label for="paymentDate">Terms: </label>
+                    <input type="text" class="form-control mx-2" id="paymentDate" name="paymentDate" />
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Add Invoice</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+        <h3>Line Items for Invoice #@Model.Invoices.First().InvoiceId</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            @foreach (var item in Model.InvoiceLineItems)
+            {
+                <tr>
+                   <td>@item.Description</td>
+                   <td>@item.Amount</td>
+                </tr>
+            }
+        </table>
+
+        <div>
+            Total: $@Model.InvoiceLineItems.Sum(x => x.Amount);
+        </div>
+        <div>
+            <form action="/" method="post">
+                <div class="form-group d-flex">
+                    <label for="paymentDate">Description: </label>
+                    <input type="text" class="form-control mx-2" id="paymentDate" name="paymentDate" />
+                </div>
+                <div class="form-group d-flex">
+                    <label for="paymentDate">Amount: </label>
+                    <input type="text" class="form-control mx-2" id="paymentDate" name="paymentDate" />
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary">Add Line Item</button>
+                </div>
+            </form>
+        </div>
+</div>

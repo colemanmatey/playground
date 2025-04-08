@@ -1,0 +1,393 @@
+/* 
+Stylesheet
+
+Name: Coleman Asare Matey
+ID: 8976310 
+ 
+*/
+
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #454372;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 1.333rem;
+    order: 1;
+}
+
+header .logo {
+    width: 100px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #EFF7FF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative; 
+    flex: 1;
+}
+
+nav a:link {
+    padding: 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #08143b;
+}
+
+nav a:hover {
+    border-radius: .5em;
+    background-color: #899D78;
+    color: #fff;
+}
+
+.sub-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #EFF7FF;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu li {
+    width: 200px;
+}
+
+.sub-menu a:link {
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu a:hover {
+    background-color: #899D78;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    font-size: 4em;
+    color: white;
+    top: 40%;
+    left: 15%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.bio {
+    padding: 4em;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.5;
+    background-color: antiquewhite;
+}
+
+.bio h2 {
+    padding: 20px 0;
+}
+
+.interests {
+    background-color: aliceblue;
+    line-height: 1.875;
+}
+
+.interests article {
+    display: flex;
+}
+
+.interests article:nth-child(2) img {
+    order: -1;
+}
+
+.interests article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 30px;
+}
+
+.interests article img {
+    width: 30%;
+    height: 100%;
+    margin: 30px;
+}
+
+.interests article .img1 {
+    clip-path: polygon(107px 62px, 76.7% 20.76%, 79.07% 119px, 92.01% 53.67%, 100% 100%, 51.21% 96.8%, 0px 100%, 14.02% 73.31%, 0.33% 53.31%, 9.54% 36.16%, 5.23% 16.51%);}
+
+.interests article .img2 {
+    clip-path: polygon(111px 46px, 67.1% 38.5%, 99.13% 164px, 83.29% 71.41%, 100% 100%, 50.77% 84.59%, 0px 100%, 14.02% 73.31%, 0.33% 53.31%, 29.22% 42.10%);
+}
+
+.interests video {
+    width: 600px;
+}
+
+.skills {
+    background-color: #effff0;
+    padding: 30px;
+    width: 100%;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skills div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+
+.skills article {
+    background-color: #ccc;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 2px 2px 1px 2px #ffffff;
+}
+
+
+.skills article li {
+    margin-left: 10px;
+}
+
+.skills article img {
+    width: 100%;
+}
+
+.skills article h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.skills article h4,
+.skills article ol {
+    line-height: 1.5;
+}
+
+.skills article ol {
+    height: 8em;
+}
+
+.skills article .button {
+    display: block;
+    border: none;
+    width: 150px;
+    border-radius: .5em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #899D78;
+}
+
+.facts {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #d5d4dc;
+}
+
+.facts table {
+    width: 1000px;
+    border-collapse: collapse;
+    background-color: #f3f3ff;
+}
+
+.facts h2 {
+    padding: 20px;
+}
+
+.facts th, td {
+    padding: 10px;
+    border: 1px solid white;
+}   
+
+.contact {
+    background-color: #9c9cb9;
+    padding: 30px;
+}
+
+.contact h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+.form {
+    background-color: #f3f3ff;
+    padding: 30px;
+}
+
+.form-group {
+    margin: 20px;
+}
+
+.form-group input {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.form-group label,
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    width: auto;
+    display: inline-block;
+}
+
+.form-group input[type="radio"] {
+    margin: 0;
+}
+
+.form-group label {
+    margin-right: 30px;
+}
+
+.form-group > label {
+    margin: 0
+}
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #27253e;
+}
+
+button[type=submit],
+button[type=reset] {
+    border: none;
+    border-radius: .5em;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+button[type=submit] {
+    background-color: #899D78;
+    color: black;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #59664e;
+    color: white;
+}
+
+button[type=reset] {
+    background-color: #db5353;
+    color: white;
+    cursor: pointer;
+}   
+
+button[type=reset]:hover {
+    background-color: #8d0000;
+    color: white;
+}
+
+
+.footer .nav{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer .nav div {
+    flex: 1;
+    padding: 30px;
+}
+
+.footer .nav h5 {
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer p {
+    padding: 20px;
+    border-top: 1px solid white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+.footer a:hover {
+    color: #899D78;
+}

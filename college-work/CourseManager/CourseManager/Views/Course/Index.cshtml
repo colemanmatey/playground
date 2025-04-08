@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+@model CoursesViewModel;
+
+<h2>All My Courses</h2>
+
+<div>
+    <div>
+
+    <a asp-controller="Course" asp-action="Create">Add New Course</a>
+    </div>
+    <table class="table table-bordered">
+        <thead class="table-responsive">
+            <tr>
+                <th>Name</th>
+                <th>Instructor</th>
+                <th>Start Date</th>
+                <th>Room #</th>
+                <th># of students</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model.Courses)
+            {
+                <tr>
+                    <td>@course.Name</td>
+                    <td>@course.Instructor</td>
+                    <td>@course.StartDate</td>
+                    <td>@course.RoomNumber</td>
+                    <td>@course.Students.Count()</td>
+                    <td>
+                        <a asp-controller="Course" asp-action="Detail" asp-route-id="@course.CourseID">Manage</a> |
+                        <a asp-controller="Course" asp-action="Edit" asp-route-id="@course.CourseID">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

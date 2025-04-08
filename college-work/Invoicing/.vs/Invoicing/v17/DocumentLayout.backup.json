@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\views\\invoice\\customerinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\views\\invoice\\customerinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\views\\shared\\components\\pagination\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\views\\shared\\components\\pagination\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\components\\paginationviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\components\\paginationviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\services\\iinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\services\\iinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\entities\\invoicelineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\entities\\invoicelineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\entities\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\entities\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|c:\\users\\colem\\onedrive\\desktop\\invoicing\\invoicing\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4AFB495-9607-4E97-94F7-D0328847E579}|Invoicing\\Invoicing.csproj|solutionrelative:invoicing\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\CustomerService.cs",
+              "RelativeToolTip": "Invoicing\\Services\\CustomerService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:38:14.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaginationViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Components\\PaginationViewComponent.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Components\\PaginationViewComponent.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Components\\PaginationViewComponent.cs",
+              "RelativeToolTip": "Invoicing\\Components\\PaginationViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:37:49.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Shared\\Components\\Pagination\\Default.cshtml",
+              "RelativeDocumentMoniker": "Invoicing\\Views\\Shared\\Components\\Pagination\\Default.cshtml",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Shared\\Components\\Pagination\\Default.cshtml",
+              "RelativeToolTip": "Invoicing\\Views\\Shared\\Components\\Pagination\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:36:20.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Invoicing\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "Invoicing\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:35:58.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Invoice\\Index.cshtml",
+              "RelativeDocumentMoniker": "Invoicing\\Views\\Invoice\\Index.cshtml",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Invoice\\Index.cshtml",
+              "RelativeToolTip": "Invoicing\\Views\\Invoice\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:35:48.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerInvoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Invoice\\CustomerInvoice.cshtml",
+              "RelativeDocumentMoniker": "Invoicing\\Views\\Invoice\\CustomerInvoice.cshtml",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Views\\Invoice\\CustomerInvoice.cshtml",
+              "RelativeToolTip": "Invoicing\\Views\\Invoice\\CustomerInvoice.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:19:48.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Controllers\\InvoiceController.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "Invoicing\\Controllers\\InvoiceController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvywAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:15:43.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IInvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\IInvoiceService.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Services\\IInvoiceService.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\IInvoiceService.cs",
+              "RelativeToolTip": "Invoicing\\Services\\IInvoiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:17:26.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Entities\\Invoice.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Entities\\Invoice.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Entities\\Invoice.cs",
+              "RelativeToolTip": "Invoicing\\Entities\\Invoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:16:47.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceLineItem.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Entities\\InvoiceLineItem.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Entities\\InvoiceLineItem.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Entities\\InvoiceLineItem.cs",
+              "RelativeToolTip": "Invoicing\\Entities\\InvoiceLineItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:16:46.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Invoicing\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:16:40.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Services\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "Invoicing\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:16:13.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Invoicing\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\colem\\OneDrive\\Desktop\\Invoicing\\Invoicing\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Invoicing\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:15:40.788Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

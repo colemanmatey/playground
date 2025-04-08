@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fast Buy | Self-Order Kiosk</title>
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>Fast Buy Inc.</h1>
+        </header>
+
+        <!-- Content -->
+        <main>
+            <!-- Products -->
+            <section id="products">
+                <article id="product1" class="product">
+                    <h2>Shoes</h2>
+                    <img src="./images/shoe.jpg" alt="" />
+                    <p>$<span>25.99</span></p>
+                    <button onclick="addProductToCart('product1')">
+                        Add to Order
+                    </button>
+                </article>
+
+                <article id="product2" class="product">
+                    <h2>Shirt</h2>
+                    <img src="./images/shirt.jpg" alt="" />
+                    <p>$<span>30.99</span></p>
+                    <button onclick="addProductToCart('product2')">
+                        Add to Order
+                    </button>
+                </article>
+
+                <article id="product3" class="product">
+                    <h2>Gold Watch</h2>
+                    <img src="./images/watch.jpg" alt="" />
+                    <p>$<span>13.59</span></p>
+                    <button onclick="addProductToCart('product3')">
+                        Add to Order
+                    </button>
+                </article>
+
+                <article id="product4" class="product">
+                    <h2>Necklace</h2>
+                    <img src="./images/necklace.jpg" alt="" />
+                    <p>$<span>26.79</span></p>
+                    <button onclick="addProductToCart('product4')">
+                        Add to Order
+                    </button>
+                </article>
+
+                <article id="product5" class="product">
+                    <h2>Sunglasses</h2>
+                    <img src="./images/glasses.jpg" alt="" />
+                    <p>$<span>42.19</span></p>
+                    <button onclick="addProductToCart('product5')">
+                        Add to Order
+                    </button>
+                </article>
+            </section>
+
+            <!-- Checkout button -->
+            <button class="checkout" onclick="checkout()">Checkout</button>
+
+            <!-- Receipt -->
+            <section id="receipt">
+                <h2>Receipt</h2>
+                <h3>Customer name: <span id="customer"></span></h3>
+                <p>
+                    <strong>Order completed on: </strong
+                    ><span id="order-date"></span>
+                </p>
+                <table id="order-details">
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Product Name</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data"></tbody>
+                </table>
+                <p>Subtotal: $<span id="subtotal"></span></p>
+
+                <p>Tax (GST @13%): $<span id="tax"></span></p>
+
+                <p><strong>Total: </strong>$<span id="total"></span></p>
+                <p>Thank you for shopping with us!</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Fast Buy Inc. 2024</p>
+            <p>Powered by Coleman</p>
+        </footer>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
