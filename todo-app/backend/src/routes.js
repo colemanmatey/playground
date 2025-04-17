@@ -5,8 +5,9 @@ import express from "express";
 const router = express.Router();
 
 // routes
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
     res.send("To-Do Application");
+
 })
 
 
