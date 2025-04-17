@@ -1,0 +1,21 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.0",
+  "description": "An application that tracks users daily todos",
+  "license": "ISC",
+  "author": "Coleman A. Matey",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "nodemon src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
