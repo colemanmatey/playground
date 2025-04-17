@@ -8,5 +8,5 @@ const port = process.env.PORT || 3000
 
 // listen for requests
 app.listen(port, () => {
-    console.log(`Server running on https://${host}:${port}`)
+    console.log(`Server running on http://${host}:${port}`)
 })

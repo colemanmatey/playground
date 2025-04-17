@@ -1,5 +1,6 @@
 // modules
 import express from "express";
+import routes from "./routes.js";
 
 
 // configure application
@@ -7,9 +8,7 @@ const app = express();
 
 
 // routes
-app.get("/", (req, res) => {
-    res.send("To-Do Application");
-})
+app.use("/", routes);
 
 
 export default app;
