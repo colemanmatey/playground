@@ -4,10 +4,10 @@ import { MongoClient } from "mongodb";
 // 
 async function db(task) {
     // database credentials
-    const username = process.env.DB_USER
     const password = encodeURIComponent(process.env.DB_PASSWORD);
-
-    const uri = `mongodb+srv://${username}:${password}@babysteps.xbrc2ub.mongodb.net/?retryWrites=true&w=majority&appName=BabySteps`;
+    const uri = `mongodb+srv://${process.env.DB_USER}:${password}@babysteps.xbrc2ub.mongodb.net/?retryWrites=true&w=majority&appName=BabySteps`;
+    
+    // create a mongoclient
     const client = new MongoClient(uri);
 
     try{
@@ -16,11 +16,13 @@ async function db(task) {
         console.log("Connected to MongoDB");
 
         // execute database operation
+        console.log("Running operation on database");
         return await task(client);
     } catch (err) {
         console.error("An error occurred:", error);
     } finally {
         await client.close();
+        console.log("MongoDB connection closed.");
     }
 }
 
