@@ -10,14 +10,14 @@ const router = express.Router();
 
 // routes
 router.route("/")
-.get(taskController.getAllTasks)
-.post(taskController.createTask);
+.get(taskController.getAll)
+.post(taskController.create);
 
 router.route("/:id")
-.get(taskController.getTaskByID)
-.patch(taskController.updateTask)
-.put(taskController.replaceTask)
-.delete(taskController.deleteTaskByID);
+.get(taskController.getByID)
+.patch(taskController.updateFields)
+.put(taskController.updateRecord)
+.delete(taskController.deleteByID);
 
 // exports
 export default router;
