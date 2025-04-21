@@ -21,9 +21,9 @@ app.get("/", (req, res) => {
     res.status(200).send({
         message: "Welcome to the To-Do Application API",
         endpoints: {
+            auth: "/api/auth",
             users: "/api/users",
-            tasks: "/api/tasks/",
-            task: "/api/tasks/:id",
+            tasks: "/api/tasks",
         }
     });
 })

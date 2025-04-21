@@ -8,17 +8,9 @@ export class CRUDController {
     constructor(service, db) {
         this.service = service;
         this.db = db;
-
-        // binding
-        this.create = this.create.bind(this)
-        this.getAll = this.getAll.bind(this)
-        this.getByID = this.getByID.bind(this)
-        this.updateFields = this.updateFields.bind(this)
-        this.updateRecord = this.updateRecord.bind(this)
-        this.deleteByID = this.deleteByID.bind(this)
     }
     
-    async create(req, res, data) {
+    create = async (req, res, data) => {
         try {
             const result = await this.db(client => this.service.create(client, data));
             res.status(201).json(result);
@@ -27,7 +19,7 @@ export class CRUDController {
         }
     }
     
-    async getAll(req, res) {
+    getAll = async (req, res) => {
         try {
             const result = await this.db(client => this.service.getAll(client))
             res.status(200).send(result)
@@ -37,7 +29,7 @@ export class CRUDController {
         }
     }
 
-    async getByID(req, res) {
+    getByID = async (req, res) => {
         try {
             const result = await this.db(client => this.service.getByID(client, req.params.id))
             res.status(200).send(result);
@@ -47,7 +39,7 @@ export class CRUDController {
         }
     }
 
-    async updateFields(req, res) {
+    updateFields = async (req, res) => {
         try {
             const result = await this.db(client => this.service.updateFields(client, req.body))
             res.status(200).send(result);
@@ -57,7 +49,7 @@ export class CRUDController {
         }
     }
     
-    async updateRecord(req, res) {
+    updateRecord = async (req, res) => {
         try {
             const result = await this.db(client => this.service.updateRecord(client, req.body))
             res.status(200).send(result);
@@ -67,7 +59,7 @@ export class CRUDController {
         }
     }
 
-    async deleteByID(req, res) {
+    deleteByID = async (req, res) => {
         try {
             const result = await this.db(client => this.service.removeByID(client, req.body))
             res.status(200).send(result);
