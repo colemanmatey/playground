@@ -19,7 +19,7 @@ async function db(task) {
         console.log("Running operation on database");
         return await task(client);
     } catch (err) {
-        console.error("An error occurred:", error);
+        console.error("An error occurred:", err);
     } finally {
         await client.close();
         console.log("MongoDB connection closed.");
