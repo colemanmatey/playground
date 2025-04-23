@@ -8,8 +8,7 @@ async function db(task) {
     const uri = `mongodb+srv://${process.env.DB_USER}:${password}@babysteps.xbrc2ub.mongodb.net/?retryWrites=true&w=majority&appName=BabySteps`;
     
     const options = {
-        ssl: true,
-        sslValidate: true,
+        tls: true,
         tlsAllowInvalidCertificates: false,
       };
       
