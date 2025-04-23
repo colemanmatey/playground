@@ -10,9 +10,9 @@ export class CRUDController {
         this.db = db;
     }
     
-    create = async (req, res, data) => {
+    create = async (req, res) => {
         try {
-            const result = await this.db(client => this.service.create(client, data));
+            const result = await this.db(client => this.service.create(client, req.body));
             res.status(201).json(result);
         } catch (error) {
             res.status(400).json({ error: error.message });
