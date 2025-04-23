@@ -4,7 +4,7 @@ function Logo() {
     return (
         <div className='d-flex'>
             <img src={ logo } alt="logo" />
-            <h1>ToDo</h1>
+            <h1 className="display-6">ToDo</h1>
         </div>
     )
 }
