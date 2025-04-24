@@ -6,7 +6,10 @@ function TaskForm() {
         const data = { title, priority }
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/tasks`, {
+            const API_URL = import.meta.env.VITE_API_URL
+            console.log(API_URL)
+            
+            const response = await fetch(`${API_URL}/api/tasks`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
