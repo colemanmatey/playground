@@ -6,15 +6,9 @@ async function db(task) {
     // database credentials
     const password = encodeURIComponent(process.env.DB_PASSWORD);
     const uri = `mongodb+srv://${process.env.DB_USER}:${password}@babysteps.xbrc2ub.mongodb.net/?retryWrites=true&w=majority&appName=BabySteps`;
-    
-    const options = {
-        ssl: true,
-        tlsAllowInvalidCertificates: false,
-      };
-      
 
     // create a mongoclient
-    const client = new MongoClient(uri, options);
+    const client = new MongoClient(uri);
 
     try{
         // connect to db
