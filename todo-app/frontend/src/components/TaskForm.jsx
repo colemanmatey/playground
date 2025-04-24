@@ -1,4 +1,8 @@
+import { API_URL } from "../shared/config.js";
+
 function TaskForm() {
+    
+    const URL = `${API_URL}/api/tasks`
 
     const submit = async (formData) => {
         const title = formData.get("title");
@@ -6,9 +10,6 @@ function TaskForm() {
         const data = { title, priority }
 
         try {
-            const API_URL = import.meta.env.VITE_API_URL
-            console.log(API_URL)
-            
             const response = await fetch(`${API_URL}/api/tasks`, {
                 method: "POST",
                 headers: {
