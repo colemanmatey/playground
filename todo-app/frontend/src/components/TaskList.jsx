@@ -27,27 +27,23 @@ function TaskList() {
         fetchData();   
     }, [tasks]);
 
-    return (
-        <div className="row">
-            <h3 className="text-center">Task List</h3>
+
+    if (tasks != []){
+        return (
             <div className="row">
-                <div className="col-lg-4 col-md-4">
-                    <h5>Title</h5>
-                </div>
-                <div className="col lg-2 col-md 2">
-                    <h5>Priority</h5>
-                </div>
-                <div className="col-lg-2 col-md-2">
-                    <h5>Actions</h5>
-                </div>
-                <div className="col-lg-4 col-md-4"></div>
+                <h3 className="text-center">Task List</h3>
+               
+                { tasks.map((task, index) => (
+                    <Task key={index} index={index} task={task} />
+                ))}
             </div>
-            { tasks.map((task, index) => (
-                // <p key={index}>{ task.title } - { task.priority }</p>
-                <Task key={index} task={task} />
-            ))}
-        </div>
-    )
+        )
+    } else {
+        return (
+            <p>No tasks available</p>
+        )
+    }
+
 }
 
 export default TaskList
