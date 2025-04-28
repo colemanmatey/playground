@@ -1,24 +1,29 @@
 import { API_URL } from "../shared/config";
 import Button from "./Button"
 
-function Task({task, index}) {
+function Task({task, index, onDelete}) {
 
-    const onEdit = (task) => {
+    const edit = (task) => {
 
     }
 
-    const onDelete = (task) => {
-        fetch(`${API_URL}/api/tasks/${task._id}`, {
-            method: "DELETE",
-        })
-        .then(response => {
+    const remove = async (task) => {
+        try {
+            const response = await fetch(`${API_URL}/api/tasks/${task._id}`, {
+                method: "DELETE",
+            });
+        
             if (!response.ok) {
                 throw new Error(`Error: ${response.status}`);
             }
-            return response.json();
-        })
-        .then(data => console.log('Task deleted:', data))
-        .catch(error => console.error('Delete failed:', error));
+        
+            const data = await response.json();
+            onDelete();
+
+            console.log('Task deleted:', data);
+        } catch (error) {
+            console.error('Delete failed:', error);
+        }
         
     }
 
@@ -32,8 +37,8 @@ function Task({task, index}) {
                 <p>{ task.priority}</p>
             </div>
             <div className="col lg-2 col-md 2">
-                <Button name="Edit" clickHandler={() => onEdit(task) }  style="m-1 btn btn-warning" />
-                <Button name="Delete" clickHandler={() => onDelete(task) } style="m-1 btn btn-danger" />
+                <Button name="Edit" clickHandler={() => edit(task) }  style="m-1 btn btn-warning" />
+                <Button name="Delete" clickHandler={() => remove(task) } style="m-1 btn btn-danger" />
             </div>
         </div>
     )                                                                                                                                                 

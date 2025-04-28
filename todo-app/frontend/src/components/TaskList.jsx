@@ -25,24 +25,17 @@ function TaskList() {
 
     useEffect(() => {
         fetchData();   
-    }, [tasks]);
+    }, []);
 
-
-    if (tasks != []){
-        return (
-            <div className="row">
-                <h3 className="text-center">Task List</h3>
-               
-                { tasks.map((task, index) => (
-                    <Task key={index} index={index} task={task} />
-                ))}
-            </div>
-        )
-    } else {
-        return (
-            <p>No tasks available</p>
-        )
-    }
+    return (
+        <div className="row">
+            <h3 className="text-center">Task List</h3>
+            
+            { tasks.map((task, index) => (
+                <Task key={index} index={index} task={task} onDelete={fetchData} />
+            ))}
+        </div>
+    )
 
 }
 
