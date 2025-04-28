@@ -2,6 +2,8 @@
  * Shared Controllers
  */
 
+import HTTP_CODES from "../config/httpcodes.js";
+
 // CRUD Controller
 export class CRUDController {
 
@@ -9,64 +11,62 @@ export class CRUDController {
         this.service = service;
         this.db = db;
     }
+
+    execute = async (req, res, action, status) => {
+        try {
+            const result = await this.db(client => action(client, req));
+            res.status(status.success).send(result);
+        } catch (error) {
+            res.status(status.failure).send({ error: error.message });
+        }
+    }
     
     create = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.create(client, req.body));
-            res.status(201).json(result);
-        } catch (error) {
-            res.status(400).json({ error: error.message });
+        const status = { 
+            success: HTTP_CODES.CREATED, 
+            failure: HTTP_CODES.BAD_REQUEST 
         }
+        await this.execute(req, res, client => this.service.create(client, req.body), status)
     }
     
     getAll = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.getAll(client))
-            res.status(200).send(result)
-        } catch (err) {
-            console.error("An error occurred:", err);
-            res.status(500).send({ error: "Internal Server Error" });
+        const status = { 
+            success: HTTP_CODES.OK, 
+            failure: HTTP_CODES.INTERNAL_SERVER_ERROR 
         }
+        await this.execute(req, res, client => this.service.getAll(client, req.body), status)
+
     }
 
     getByID = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.getByID(client, req.params.id))
-            res.status(200).send(result);
-        } catch (err) {
-            console.error("An error occurred:", err.message || err);
-            res.status(500).send({ error: "Internal Server Error" });
+        const status = { 
+            success: HTTP_CODES.OK, 
+            failure: HTTP_CODES.INTERNAL_SERVER_ERROR 
         }
+        await this.execute(req, res, client => this.service.getByID(client, req.params.id), status)
     }
 
     updateFields = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.updateFields(client, req.body))
-            res.status(200).send(result);
-        } catch (err) {
-            console.error("An error occurred:", err.message || err);
-            res.status(500).send({ error: "Internal Server Error" });
-        }
+        const status = { 
+            success: HTTP_CODES.OK, 
+            failure: HTTP_CODES.INTERNAL_SERVER_ERROR 
+        }     
+        await this.execute(req, res, client => this.service.updateFields(client, req.body), status)
     }
     
     updateRecord = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.updateRecord(client, req.body))
-            res.status(200).send(result);
-        } catch (err) {
-            console.error("An error occurred:", err.message || err);
-            res.status(500).send({ error: "Internal Server Error" });
-        }
+        const status = { 
+            success: HTTP_CODES.OK, 
+            failure: HTTP_CODES.INTERNAL_SERVER_ERROR 
+        }       
+        await this.execute(req, res, client => this.service.updateRecord(client, req.body), status)
     }
 
     deleteByID = async (req, res) => {
-        try {
-            const result = await this.db(client => this.service.removeByID(client, req.params.id))
-            res.status(200).send(result);
-        } catch (err) {
-            console.error("An error occurred:", err.message || err);
-            res.status(500).send({ error: "Internal Server Error" });
-        }
+        const status = { 
+            success: HTTP_CODES.OK, 
+            failure: HTTP_CODES.INTERNAL_SERVER_ERROR 
+        }       
+        await this.execute(req, res, client => this.service.removeByID(client, req.params.id), status)
     }
 }
-
