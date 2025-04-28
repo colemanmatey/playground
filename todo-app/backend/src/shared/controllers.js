@@ -61,7 +61,7 @@ export class CRUDController {
 
     deleteByID = async (req, res) => {
         try {
-            const result = await this.db(client => this.service.removeByID(client, req.body))
+            const result = await this.db(client => this.service.removeByID(client, req.params.id))
             res.status(200).send(result);
         } catch (err) {
             console.error("An error occurred:", err.message || err);
