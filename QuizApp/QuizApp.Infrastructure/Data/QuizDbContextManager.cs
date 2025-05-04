@@ -19,10 +19,5 @@ namespace QuizApp.Infrastructure.Data
 
             _options = optionsBuilder.Options;
         }
-
-        public QuizDbContext CreateDbContext()
-        {
-            return new QuizDbContext(_options);
-        }
     }
 }
