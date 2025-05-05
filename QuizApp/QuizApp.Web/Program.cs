@@ -10,7 +10,7 @@ namespace QuizApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddInfrastructureServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices(builder.Configuration); // An extension from Infrastructure project
 
             var app = builder.Build();
 
