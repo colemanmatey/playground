@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace QuizApp.Infrastructure.Extensions
 {
-    public static class ServiceCollectionExtensions
+    public static class InfrastructureServiceExtensions
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
