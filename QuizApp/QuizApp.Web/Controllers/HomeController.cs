@@ -19,7 +19,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         QuizViewModel model = new QuizViewModel();
-        model.quizzes = _quizservice.GetAllQuizzes();
+        model.Quizzes = _quizservice.GetAllQuizzes();
         return View(model);
     }
 

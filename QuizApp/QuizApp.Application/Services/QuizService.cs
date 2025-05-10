@@ -21,5 +21,10 @@ namespace QuizApp.Application.Services
         {
             return _quizRepository.GetAll();
         }
+
+        public Quiz GetQuizById(int id)
+        {
+            return _quizRepository.GetById(id);
+        }
     }
 }

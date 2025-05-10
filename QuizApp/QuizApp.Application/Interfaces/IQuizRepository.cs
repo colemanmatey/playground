@@ -10,5 +10,6 @@ namespace QuizApp.Application.Interfaces
     public interface IQuizRepository
     {
         List<Quiz> GetAll();
+        Quiz GetById(int id);
     }
 }

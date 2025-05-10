@@ -22,5 +22,16 @@ namespace QuizApp.Infrastructure.Repositories
         {
             return _context.Quizzes.ToList();
         }
+
+        public Quiz GetById(int id)
+        {
+            var quiz = _context.Quizzes.SingleOrDefault(q => q.Id == id);
+            quiz.Questions = _context.Questions.Where(q => q.QuizId == id).ToList();
+            if (quiz == null)
+            {
+                throw new KeyNotFoundException($"Quiz with ID {id} not found.");
+            }
+            return quiz;
+        }
     }
 }

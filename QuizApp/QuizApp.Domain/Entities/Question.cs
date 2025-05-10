@@ -17,6 +17,10 @@ namespace QuizApp.Domain.Entities
         public DateTime UpdatedAt { get; set; }
         public List<Choice> Choices { get; set; }
 
+        // Navigational property
+        public int QuizId { get; set; }
+        public Quiz Quiz { get; set; }
+
         public Question()
         {
             CreatedAt = DateTime.UtcNow;
