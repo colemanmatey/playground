@@ -2,7 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@model QuizViewModel
+
+<div>
+    <h2>Quizzes</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Created By</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var quiz in Model.quizzes)
+            {
+                <tr>
+                    <td>@quiz.Id</td>
+                    <td>@quiz.Title</td>
+                    <td>@quiz.Description</td>
+                    <td>@quiz.CreatedBy</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

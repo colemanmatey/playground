@@ -9,6 +9,6 @@ namespace QuizApp.Application.Interfaces
 {
     public interface IQuizRepository
     {
-        List<Quiz> GetQuizzes();
+        List<Quiz> GetAll();
     }
 }

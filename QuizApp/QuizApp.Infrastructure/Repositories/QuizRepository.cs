@@ -18,7 +18,7 @@ namespace QuizApp.Infrastructure.Repositories
             _context = context;
         }
 
-        public List<Quiz> GetQuizzes()
+        public List<Quiz> GetAll()
         {
             return _context.Quizzes.ToList();
         }

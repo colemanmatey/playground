@@ -1,4 +1,4 @@
-namespace QuizApp.Models
+namespace QuizApp.Web.Models
 {
     public class ErrorViewModel
     {

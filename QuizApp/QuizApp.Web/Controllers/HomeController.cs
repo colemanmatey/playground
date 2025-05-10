@@ -1,21 +1,26 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using QuizApp.Models;
+using QuizApp.Application.Services;
+using QuizApp.Web.Models;
 
 namespace QuizApp.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly QuizService _quizservice;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, QuizService quizService)
     {
         _logger = logger;
+        _quizservice = quizService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        QuizViewModel model = new QuizViewModel();
+        model.quizzes = _quizservice.GetAllQuizzes();
+        return View(model);
     }
 
     public IActionResult Privacy()
