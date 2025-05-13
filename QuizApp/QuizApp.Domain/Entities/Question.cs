@@ -13,35 +13,12 @@ namespace QuizApp.Domain.Entities
         public required string QuestionText { get; set; }
         public QuestionType QuestionType { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; }
-        public List<Choice> Choices { get; set; }
+        public List<Choice> Choices { get; set; } = new List<Choice>();
 
         // Navigational property
         public int QuizId { get; set; }
-        public Quiz Quiz { get; set; }
-
-        public Question()
-        {
-            CreatedAt = DateTime.UtcNow;
-            UpdatedAt = DateTime.UtcNow;
-            Choices = new List<Choice>();
-        }
-        
-        public Question(string question)
-        {
-            QuestionText = question;
-            CreatedAt = DateTime.UtcNow;
-            UpdatedAt = DateTime.UtcNow;
-            Choices = new List<Choice>();
-        }
-        public Question(string question, QuestionType questionType)
-        {
-            QuestionText = question;
-            QuestionType = questionType;
-            CreatedAt = DateTime.UtcNow;
-            UpdatedAt = DateTime.UtcNow;
-            Choices = new List<Choice>();
-        }
+        public Quiz Quiz { get; set; } = null!;
     }
 }

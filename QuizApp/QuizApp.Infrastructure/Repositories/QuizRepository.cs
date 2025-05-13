@@ -1,4 +1,5 @@
-﻿using QuizApp.Application.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using QuizApp.Application.Interfaces;
 using QuizApp.Domain.Entities;
 using QuizApp.Infrastructure.Data;
 using System;
@@ -25,8 +26,11 @@ namespace QuizApp.Infrastructure.Repositories
 
         public Quiz GetById(int id)
         {
-            var quiz = _context.Quizzes.SingleOrDefault(q => q.Id == id);
-            quiz.Questions = _context.Questions.Where(q => q.QuizId == id).ToList();
+            var quiz = _context.Quizzes
+                .Include(quiz => quiz.Questions)
+                    .ThenInclude(question => question.Choices)
+                .SingleOrDefault(quiz => quiz.Id == id);
+
             if (quiz == null)
             {
                 throw new KeyNotFoundException($"Quiz with ID {id} not found.");

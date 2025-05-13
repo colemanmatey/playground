@@ -12,14 +12,9 @@ namespace QuizApp.Domain.Entities
         public required string Title { get; set; }
         public string? Description { get; set; }
         public required string CreatedBy { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; }
-        public List<Question> Questions { get; set; }
+        public List<Question> Questions { get; set; } = new List<Question>();
 
-        public Quiz()
-        {
-            Questions = new List<Question>();
-            CreatedAt = DateTime.UtcNow;
-        }
     }
 }
